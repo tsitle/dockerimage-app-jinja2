@@ -1,0 +1,5 @@
+https://pypi.org/project/Jinja2/#files
+https://pypi.org/project/MarkupSafe/#files
+https://github.com/kolypto/j2cli/releases
+https://pyyaml.org/wiki/LibYAML
+https://github.com/yaml/pyyaml/releases
