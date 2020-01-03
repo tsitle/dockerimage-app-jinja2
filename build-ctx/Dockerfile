@@ -44,25 +44,25 @@ ADD files/j2cli-${CF_J2CLI_VERSION}.tgz /tmp/
 
 RUN \
 	cd /tmp/yaml-* \
-	&& echo -e "\n\nCompiling and installing LibYAML ${CF_LIBYAML_VERSION}...\n\n" \
+	&& /bin/echo -e "\n\nCompiling and installing LibYAML ${CF_LIBYAML_VERSION}...\n\n" \
 	&& ./configure --prefix=/usr \
 	&& make \
 	&& make install \
 	#
 	&& cd /tmp/pyyaml-* \
-	&& echo -e "\n\nCompiling and installing PyYAML ${CF_PYYAML_VERSION}...\n\n" \
+	&& /bin/echo -e "\n\nCompiling and installing PyYAML ${CF_PYYAML_VERSION}...\n\n" \
 	&& python3 setup.py --with-libyaml install \
 	#
 	&& cd /tmp/MarkupSafe-* \
-	&& echo -e "\n\nCompiling and installing MarkupSafe ${CF_MARKUPSAFE_VERSION}...\n\n" \
+	&& /bin/echo -e "\n\nCompiling and installing MarkupSafe ${CF_MARKUPSAFE_VERSION}...\n\n" \
 	&& python3 setup.py install \
 	#
 	&& cd /tmp/Jinja2-* \
-	&& echo -e "\n\nCompiling and installing Jinja2 ${CF_JINJA2_VERSION}...\n\n" \
+	&& /bin/echo -e "\n\nCompiling and installing Jinja2 ${CF_JINJA2_VERSION}...\n\n" \
 	&& python3 setup.py install \
 	#
 	&& cd /tmp/j2cli-* \
-	&& echo -e "\n\nCompiling and installing j2cli ${CF_J2CLI_VERSION}...\n\n" \
+	&& /bin/echo -e "\n\nCompiling and installing j2cli ${CF_J2CLI_VERSION}...\n\n" \
 	&& python3 setup.py install
 
 #
